@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="bt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-------------------------------------tÍTULO QUE SERÁ EXIBIDO NA JANELA--------------------------------------->
+    <!--Título que será exibido na janela-->
     <title>Mendonca TI</title>
-    <!--------------------------------------------------BOOTSTRAP--------------------------------------------->
-    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
-    <!--CSS Personalizado -->
+    
+    <!--BOOTSTRAP-->
+    <link rel ="stylesheet" href="../public/css/bootstrap.min.css">
+    <!--CSS personalizado-->
     <link rel="stylesheet" href="../public/css/style.css">
+    <!-- Impedir a execução de scripts externos ou não autorizados-->
+     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
 </head>
-
 <body>
-    <div class="container">
-        <h1>Hello Electron</h1>
+    <div class="container button">
+        <img src="../public/img/clientes.png" alt="Clientes" title="Cadastro de Clientes">
+        <img src="../public/img/os.png" alt="Computador" title="Emissão de OS">
     </div>
 
+    <footer>
+        <p id="dataAtual"></p>
+    </footer>
 
+    <!-- Bootstrap-->
+     <script src="../public/js/bootstrap.min.js"></script>
+     <script src="../public/js/script.js"></script>
 
-    <!--BOOTSTRAP-->
-    <script src="../public/js/bootstrap.min.js"></script>
+     <script>
+        // Atualizar automaticamente o data (footer - copyright)  
+        let dataAtual = document.getElementById("copyrightYear");
+        let anoAtual = new Date().getFullYear();
+        dataAtual.textContent = anoAtual;
+    </script>
 </body>
-
 </html>

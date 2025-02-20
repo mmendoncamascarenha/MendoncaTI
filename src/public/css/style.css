@@ -1,1 +1,32 @@
-@charset
+@charset "utf-8";
+
+/* Estilo botões - Botões da Tela Principal */
+
+.button img {
+    margin: 50px 15px 25px 15px;
+    padding: 5px;
+    border: 1px solid  #e8e8e8;
+    cursor: pointer;
+
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+footer span {
+    font-weight: bold;
+}
