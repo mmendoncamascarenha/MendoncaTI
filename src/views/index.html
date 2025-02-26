@@ -6,32 +6,30 @@
     <!--Título que será exibido na janela-->
     <title>Mendonca TI</title>
     
-    <!--BOOTSTRAP-->
-    <link rel ="stylesheet" href="../public/css/bootstrap.min.css">
-    <!--CSS personalizado-->
-    <link rel="stylesheet" href="../public/css/style.css">
-    <!-- Impedir a execução de scripts externos ou não autorizados-->
-     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+   <!-- CSS Personalizado -->
+   <link rel="stylesheet" href="../public/css/style.css">
+   <!-- impedir a execução de scripts externos ou não autorizados -->
+   <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
 </head>
+
 <body>
-    <div class="container button">
-        <img src="../public/img/clientes.png" alt="Clientes" title="Cadastro de Clientes">
-        <img src="../public/img/os.png" alt="Computador" title="Emissão de OS">
-    </div>
 
-    <footer>
-        <p id="dataAtual"></p>
-    </footer>
+   <div class="container button">
+       <img src="../public/img/clientes.png" alt="clientes" title="Cadastro de clientes" onclick="client()">
+       <img src="../public/img/os.png" alt="computador" title="Emissão de OS" onclick="os()">
+   </div>
+   <footer>
+       <p id="dataAtual"></p>
+   </footer>
 
-    <!-- Bootstrap-->
-     <script src="../public/js/bootstrap.min.js"></script>
-     <script src="../public/js/script.js"></script>
-
-     <script>
-        // Atualizar automaticamente o data (footer - copyright)  
-        let dataAtual = document.getElementById("copyrightYear");
-        let anoAtual = new Date().getFullYear();
-        dataAtual.textContent = anoAtual;
-    </script>
+   <!-- Bootstrap -->
+   <script src="../public/js/bootstrap.min.js"></script>
+   <!-- scripts -->
+   <script src="../public/js/script.js"></script>
+   <!-- Renderizador -->
+   <script src="renderer.js"></script>
 </body>
+
 </html>
