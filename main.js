@@ -77,7 +77,7 @@ function clientWindow() {
       modal: true
     })
   }
-    client.loadFile('./src/views/cliente.html')
+    client.loadFile('./src/views/clientes.html')
     client.center()
   
 }
@@ -97,7 +97,7 @@ function osWindow() {
       modal: true
     })
   }
-  os.loadFile('./src/views/os.html')
+  os.loadFile('./src/views/OS.html')
   os.center()
 }
 
